@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports - Inlighn Tech</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        body {
+            font-family: 'Urbanist', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#0f172a] text-white min-h-screen pt-20">
+
+    <!-- Back to Dashboard -->
+    <div class="max-w-7xl mx-auto px-4 mb-6">
+        <a href="dashboard.html"
+            class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-5 py-2 rounded-lg font-semibold text-white shadow-lg hover:scale-105 transition duration-300 hover:shadow-[0_0_20px_rgba(99,102,241,0.6)]">
+            ← Back to Dashboard
+        </a>
+    </div>
+
+    <!-- Reports Section -->
+    <section class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-14 animate-fade-in-up">Reports & Insights</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- Daily Report -->
+            <div
+                class="bg-[#1f2937] p-6 rounded-2xl shadow-xl group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgba(59,130,246,0.45)]">
+                <div
+                    class="absolute -top-4 -right-4 w-32 h-32 bg-blue-500 opacity-20 rounded-full blur-3xl group-hover:opacity-40 transition duration-300">
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-400 mb-2">Daily Report</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Stay updated with daily performance metrics, task completion stats, and user engagement summaries.
+                </p>
+                <button
+                    class="mt-5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition duration-300">
+                    View Report
+                </button>
+            </div>
+
+            <!-- Weekly Analysis -->
+            <div
+                class="bg-[#1f2937] p-6 rounded-2xl shadow-xl group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgba(168,85,247,0.45)]">
+                <div
+                    class="absolute -bottom-6 -left-6 w-36 h-36 bg-purple-500 opacity-20 rounded-full blur-3xl group-hover:opacity-40 transition duration-300">
+                </div>
+                <h3 class="text-2xl font-semibold text-purple-400 mb-2">Weekly Analysis</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Analyze weekly learning progress, identify trends, and evaluate performance peaks and dips.
+                </p>
+                <button
+                    class="mt-5 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium transition duration-300">
+                    Analyze Now
+                </button>
+            </div>
+
+            <!-- Certificates -->
+            <div
+                class="bg-[#1f2937] p-6 rounded-2xl shadow-xl group relative overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgba(34,211,238,0.45)]">
+                <div
+                    class="absolute top-0 right-0 w-28 h-28 bg-cyan-400 opacity-20 rounded-full blur-3xl group-hover:opacity-40 transition duration-300">
+                </div>
+                <h3 class="text-2xl font-semibold text-cyan-400 mb-2">Certificates</h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Download your completion certificates and keep track of achievements for each completed program.
+                </p>
+                <button
+                    class="mt-5 px-4 py-2 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg font-medium transition duration-300">
+                    Download
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-[#0f172a] text-white py-14 px-6 mt-24 overflow-hidden">
+        <!-- Floating Background Blobs -->
+        <div
+            class="absolute top-0 left-0 w-80 h-80 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full opacity-30 blur-3xl animate-floating -z-10">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-72 h-72 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full opacity-30 blur-2xl animate-floating delay-1000 -z-10">
+        </div>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-start z-10">
+            <!-- Brand Description -->
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold text-white animate-fade-in-up">Inlighn<span
+                        class="text-blue-400">Tech</span></h2>
+                <p class="text-sm text-gray-400 leading-relaxed max-w-sm">
+                    Real skills. Real mentors. Real internships. Level up your career with Inlighn Tech's immersive
+                    training experience.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-blue-400 transition">🏠 Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-400 transition">📖 About</a></li>
+                    <li><a href="programs.html" class="hover:text-blue-400 transition">🎓 Programs</a></li>
+                    <li><a href="verify.html" class="hover:text-blue-400 transition">✅ Verify</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-400 transition">📞 Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Icons -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Stay Connected</h3>
+                <div class="flex gap-5 text-xl">
+                    <a href="#"
+                        class="text-blue-400 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_#60a5fa]">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="text-pink-400 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_#ec4899]">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="text-cyan-400 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_#22d3ee]">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="text-red-500 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_#f87171]">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Glow Line -->
+        <div
+            class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 via-blue-500 to-cyan-400 animate-pulse-slow">
+        </div>
+        <!-- Bottom Line -->
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
+            <p>&copy; <span id="year"></span> Inlighn Tech. All rights reserved. | Made with ❤️ by
+                <a href="https://github.com/LEYTHAN-X" target="_blank"
+                    class="text-blue-400 hover:underline">Leythan-X</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

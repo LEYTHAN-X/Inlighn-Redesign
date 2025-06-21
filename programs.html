@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programs - Inlighn Tech</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        body {
+            font-family: 'Urbanist', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#0f172a] text-white">
+    <div id="trail-container"></div>
+    <!-- Navbar -->
+    <header class="w-full bg-[#111827] shadow-md fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">Inlighn<span class="text-blue-500">Tech</span></h1>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="about.html" class="hover:text-blue-400 transition">About</a>
+                <a href="programs.html" class="text-blue-400 font-semibold">Programs</a>
+                <a href="verify.html" class="hover:text-blue-400 transition">Verify</a>
+                <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+            </nav>
+            <div class="md:hidden text-white text-xl cursor-pointer" onclick="toggleMenu()">☰</div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-[#1f2937] px-4 pb-4">
+            <a href="index.html" class="block py-2 hover:text-blue-400">Home</a>
+            <a href="about.html" class="block py-2 hover:text-blue-400">About</a>
+            <a href="programs.html" class="block py-2 text-blue-400 font-semibold">Programs</a>
+            <a href="verify.html" class="block py-2 hover:text-blue-400">Verify</a>
+            <a href="contact.html" class="block py-2 hover:text-blue-400">Contact</a>
+        </div>
+    </header>
+
+    <!-- Intro Section with Animated Gradient and Wave -->
+    <section class="relative pt-32 pb-40 bg-[#0f172a] text-center overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 z-10 relative" data-aos="fade-down">
+            <h1
+                class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 animate-fade-in-up">
+                Build Your Career with Real Internship Experience
+            </h1>
+            <p class="mt-4 text-lg text-gray-300 animate-fade-in-up delay-100">
+                Choose from our cutting-edge tech programs designed to get you industry-ready through mentorship and
+                hands-on
+                training.
+            </p>
+        </div>
+
+        <!-- Wavy Bottom Separator -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-0">
+            <svg class="w-full h-24" viewBox="0 0 1440 320" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill="#1e293b" fill-opacity="1"
+                    d="M0,224L48,197.3C96,171,192,117,288,112C384,107,480,149,576,154.7C672,160,768,128,864,138.7C960,149,1056,203,1152,197.3C1248,192,1344,128,1392,96L1440,64L1440,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+
+
+    <!-- Programs Section -->
+    <section class="pt-32 pb-24 bg-[#0f172a] text-center relative overflow-hidden">
+        <div
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-to-tr from-purple-500 to-pink-500 opacity-20 rounded-full blur-3xl animate-pulse z-0">
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400"
+                data-aos="zoom-in">
+                Explore Our Internship Tracks
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+                <!-- Program Card -->
+                <div class="bg-[#1f2937] rounded-xl shadow-xl border border-blue-900 relative group overflow-hidden card-glow hover:scale-105 transition duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+
+                    <div
+                        class="absolute inset-0 bg-blue-500 opacity-10 group-hover:opacity-20 transition duration-300 blur-xl">
+                    </div>
+                    <img src="https://media.istockphoto.com/id/1420039900/photo/cyber-security-ransomware-email-phishing-encrypted-technology-digital-information-protected.webp?a=1&b=1&s=612x612&w=0&k=20&c=GOfKER2wccz8_UMtG0Jk4uQH2TgkUuHQhGT08EkFTOk="
+                        alt="Cybersecurity" class="w-full h-56 object-cover" />
+                    <div class="p-6 text-left relative z-10">
+                        <h3 class="text-2xl font-semibold text-red-400 mb-2">Cybersecurity</h3>
+                        <p class="text-gray-300 mb-4">Learn ethical hacking, malware analysis, and digital forensics via
+                            real labs.</p>
+                        <a href="#" class="text-blue-400 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Full Stack -->
+                <div class="bg-[#1f2937] rounded-xl shadow-xl border border-blue-900 relative group overflow-hidden card-glow hover:scale-105 transition duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+
+                    <div
+                        class="absolute inset-0 bg-green-500 opacity-10 group-hover:opacity-20 transition duration-300 blur-xl">
+                    </div>
+                    <img src="https://media.istockphoto.com/id/2150805373/photo/3d-white-html-tag-on-a-computer-window-dialog-on-gradient-purple-background-illustration-of.webp?a=1&b=1&s=612x612&w=0&k=20&c=FOlrhS5zt3hxNg-d9unk0PIAeFTLmKWy7WZseH0lcCI= "
+                        alt="Full Stack" class="w-full h-56 object-cover" />
+                    <div class="p-6 text-left relative z-10">
+                        <h3 class="text-2xl font-semibold text-green-400 mb-2">Full Stack Development</h3>
+                        <p class="text-gray-300 mb-4">Build modern web applications using MERN stack and REST APIs.</p>
+                        <a href="#" class="text-blue-400 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="bg-[#1f2937] rounded-xl shadow-xl border border-blue-900 relative group overflow-hidden card-glow hover:scale-105 transition duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="absolute inset-0 bg-purple-500 opacity-10 group-hover:opacity-20 transition duration-300 blur-xl">
+                    </div>
+                    <img src="https://plus.unsplash.com/premium_photo-1661878265739-da90bc1af051?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGF0YSUyMHNjaWVuY2V8ZW58MHx8MHx8fDA%3D"
+                        alt="Data Science" class="w-full h-56 object-cover" />
+                    <div class="p-6 text-left relative z-10">
+                        <h3 class="text-2xl font-semibold text-purple-400 mb-2">Data Science</h3>
+                        <p class="text-gray-300 mb-4">Master ML, AI, and data engineering with real industry datasets.
+                        </p>
+                        <a href="#" class="text-blue-400 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="bg-[#1f2937] rounded-xl shadow-xl border border-blue-900 relative group overflow-hidden card-glow hover:scale-105 transition duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="absolute inset-0 bg-yellow-500 opacity-10 group-hover:opacity-20 transition duration-300 blur-xl">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZGF0YSUyMHNjaWVuY2V8ZW58MHx8MHx8fDA%3D"
+                        alt="Data Analysis" class="w-full h-56 object-cover" />
+                    <div class="p-6 text-left relative z-10">
+                        <h3 class="text-2xl font-semibold text-yellow-400 mb-2">Data Analysis</h3>
+                        <p class="text-gray-300 mb-4">Use SQL, Excel, and Tableau to analyze and visualize insights.</p>
+                        <a href="#" class="text-blue-400 hover:underline">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-20 bg-[#0f172a] text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2
+                class="text-3xl md:text-4xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-500">
+                How to Get Started with Inlighn Tech
+            </h2>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-[#1f293b] p-6 rounded-xl border border-blue-400/20 hover:shadow-[0_0_20px_#3b82f6] transition hover:scale-105"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-3xl font-bold text-blue-400 mb-4">1</div>
+                    <h4 class="text-xl font-semibold mb-2">Explore Programs</h4>
+                    <p class="text-gray-300">Browse our internships in full stack, cybersecurity, data science, and
+                        more.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-[#1f293b] p-6 rounded-xl border border-purple-400/20 hover:shadow-[0_0_20px_#a855f7] transition hover:scale-105"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-3xl font-bold text-purple-400 mb-4">2</div>
+                    <h4 class="text-xl font-semibold mb-2">Apply Online</h4>
+                    <p class="text-gray-300">Fill out a quick application form with your interests and background.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-[#1f293b] p-6 rounded-xl border border-yellow-400/20 hover:shadow-[0_0_20px_#eab308] transition hover:scale-105"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-3xl font-bold text-yellow-400 mb-4">3</div>
+                    <h4 class="text-xl font-semibold mb-2">Start Learning</h4>
+                    <p class="text-gray-300">Get matched with mentors, join projects, and access your internship
+                        dashboard.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-[#1f293b] p-6 rounded-xl border border-pink-400/20 hover:shadow-[0_0_20px_#ec4899] transition hover:scale-105"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-3xl font-bold text-pink-400 mb-4">4</div>
+                    <h4 class="text-xl font-semibold mb-2">Earn Certificate</h4>
+                    <p class="text-gray-300">Complete your internship and get certified — ready to impress employers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-[#0f172a] text-white" id="testimonials">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2
+                class="text-3xl md:text-4xl font-extrabold mb-14 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 animate-pulse">
+                What Our Students Say
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Testimonial 1 -->
+                <div class="bg-[#1f2937] p-6 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 border border-blue-500/20 hover:shadow-[0_0_25px_#3b82f6] glow-box"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <p class="text-gray-300 mb-6 italic leading-relaxed">"Inlighn Tech's Full Stack program gave me
+                        real-world skills. I built projects, worked with mentors, and landed an internship!"</p>
+                    <div class="flex items-center justify-center gap-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                            class="w-12 h-12 rounded-full ring-2 ring-blue-400" alt="Student 1" />
+                        <div class="text-left">
+                            <p class="font-semibold text-blue-400 text-lg">Aisha Sharma</p>
+                            <p class="text-xs text-gray-400">Web Developer Intern</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-[#1f2937] p-6 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 border border-purple-500/20 hover:shadow-[0_0_25px_#a855f7] glow-box"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-gray-300 mb-6 italic leading-relaxed">"I was new to cybersecurity, but this program
+                        made everything hands-on and fun. Now I feel confident in my skills."</p>
+                    <div class="flex items-center justify-center gap-4">
+                        <img src="https://randomuser.me/api/portraits/men/35.jpg"
+                            class="w-12 h-12 rounded-full ring-2 ring-purple-400" alt="Student 2" />
+                        <div class="text-left">
+                            <p class="font-semibold text-purple-400 text-lg">Rohan Mehta</p>
+                            <p class="text-xs text-gray-400">Cybersecurity Analyst Intern</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-[#1f2937] p-6 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 border border-yellow-500/20 hover:shadow-[0_0_25px_#eab308] glow-box"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <p class="text-gray-300 mb-6 italic leading-relaxed">"The data science internship gave me practical
+                        experience with Python and ML tools. Best decision ever."</p>
+                    <div class="flex items-center justify-center gap-4">
+                        <img src="https://randomuser.me/api/portraits/men/64.jpg"
+                            class="w-12 h-12 rounded-full ring-2 ring-yellow-400" alt="Student 3" />
+                        <div class="text-left">
+                            <p class="font-semibold text-yellow-400 text-lg">Aryan Patel</p>
+                            <p class="text-xs text-gray-400">Data Science Intern</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section
+        class="relative py-20 px-6 bg-gradient-to-br from-purple-800 via-indigo-900 to-blue-950 text-white overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center border-2 border-blue-500 rounded-3xl p-10 shadow-2xl card-glow"
+            data-aos="zoom-in-up">
+            <h2
+                class="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-400">
+                Ready to Launch Your Tech Career?
+            </h2>
+            <p class="text-gray-300 text-lg mb-8">
+                Gain real-world experience, boost your resume, and learn from expert mentors through our immersive
+                internship programs.
+            </p>
+            <a href="contact.html"
+                class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold shadow-lg transition duration-300 transform hover:scale-105">
+                Join Now
+            </a>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-[#111827] text-gray-300 py-12 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+            <!-- Brand Info -->
+            <div class="space-y-4">
+                <h2 class="text-2xl font-bold text-white">Inlighn<span class="text-blue-500">Tech</span></h2>
+                <p class="text-sm text-gray-400">
+                    Empowering future innovators through immersive, real-world internship experiences.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-400 transition">About</a></li>
+                    <li><a href="programs.html" class="hover:text-blue-400 transition">Programs</a></li>
+                    <li><a href="verify.html" class="hover:text-blue-400 transition">Verify</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Resources</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-blue-400 transition">Blog</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">FAQs</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Get in Touch</h3>
+                <p class="text-sm text-gray-400">Email: support@inlighntech.com</p>
+                <p class="text-sm text-gray-400 mt-1">Phone: +91 12345 67890</p>
+            </div>
+        </div>
+
+        <!-- Divider and Credits -->
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500 relative z-10">
+            <p>&copy; 2025 Inlighn Tech. All rights reserved.</p>
+            <p class="mt-1">Made with ❤️ by <span class="text-white font-medium">LEYTHAN-X</span></p>
+        </div>
+
+        <!-- Background Glows -->
+        <div class="absolute -top-10 left-10 w-72 h-72 bg-purple-600 opacity-10 blur-3xl animate-pulse rounded-full">
+        </div>
+        <div class="absolute bottom-0 right-0 w-60 h-60 bg-blue-500 opacity-10 blur-2xl animate-ping rounded-full">
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 1000, offset: 100 });
+    </script>
+
+
+</body>
+
+</html>

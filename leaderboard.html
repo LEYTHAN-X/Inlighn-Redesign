@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard - Inlighn Tech</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+            font-family: 'Urbanist', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#0f172a] text-white min-h-screen flex flex-col px-4 pt-16">
+
+    <!-- Back Button -->
+    <div class="w-full max-w-7xl mx-auto flex justify-start mb-8">
+        <a href="dashboard.html"
+            class="bg-gradient-to-r from-blue-500 to-purple-600 px-5 py-2 rounded-lg font-semibold text-white shadow-lg hover:scale-105 transition duration-300 hover:shadow-[0_0_20px_rgba(99,102,241,0.6)]">
+            ← Back to Dashboard
+        </a>
+    </div>
+
+    <!-- Leaderboard Section -->
+    <section class="w-full max-w-7xl mx-auto text-center mb-20">
+        <h2 class="text-4xl font-bold mb-6 animate-fade-in-up">🏆 Leaderboard</h2>
+        <p class="max-w-4xl mx-auto text-gray-300 mb-12 leading-relaxed text-lg">
+            Track the top performers and rising stars of the Inlighn Tech community. This leaderboard celebrates our
+            learners who have consistently demonstrated excellence, innovation, and dedication across all tech programs.
+            From real-time updates to long-term progress, stay motivated and compete for the top spot!
+        </p>
+
+        <!-- Top 3 Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Leader Cards -->
+            <div
+                class="bg-gradient-to-br from-blue-700 to-purple-700 p-6 rounded-2xl shadow-xl text-white transform hover:scale-105 transition duration-300 hover:shadow-[0_0_25px_rgba(99,102,241,0.5)] relative group">
+                <div
+                    class="absolute top-4 right-4 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-full shadow-md animate-bounce">
+                    🥇 #1</div>
+                <h3 class="text-2xl font-bold mb-1">Aarav Sharma</h3>
+                <p class="text-gray-300 text-sm mb-2">Full Stack Intern</p>
+                <p class="text-lg font-semibold text-yellow-300">Score: 980</p>
+            </div>
+
+            <div
+                class="bg-gradient-to-br from-purple-600 to-pink-500 p-6 rounded-2xl shadow-xl text-white transform hover:scale-105 transition duration-300 hover:shadow-[0_0_25px_rgba(236,72,153,0.5)] relative group">
+                <div
+                    class="absolute top-4 right-4 bg-gray-300 text-black text-xs font-bold px-2 py-1 rounded-full shadow-md animate-bounce">
+                    🥈 #2</div>
+                <h3 class="text-2xl font-bold mb-1">Riya Patel</h3>
+                <p class="text-gray-300 text-sm mb-2">Data Science Trainee</p>
+                <p class="text-lg font-semibold text-yellow-300">Score: 920</p>
+            </div>
+
+            <div
+                class="bg-gradient-to-br from-cyan-600 to-blue-500 p-6 rounded-2xl shadow-xl text-white transform hover:scale-105 transition duration-300 hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] relative group">
+                <div
+                    class="absolute top-4 right-4 bg-orange-400 text-black text-xs font-bold px-2 py-1 rounded-full shadow-md animate-bounce">
+                    🥉 #3</div>
+                <h3 class="text-2xl font-bold mb-1">Kunal Mehta</h3>
+                <p class="text-gray-300 text-sm mb-2">AI/ML Intern</p>
+                <p class="text-lg font-semibold text-yellow-300">Score: 895</p>
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <div class="mt-16 overflow-x-auto bg-[#1e293b] rounded-xl shadow-xl">
+            <table class="min-w-full text-left text-sm text-white">
+                <thead class="bg-[#334155] text-gray-300 uppercase text-xs">
+                    <tr>
+                        <th class="px-6 py-4">Rank</th>
+                        <th class="px-6 py-4">Name</th>
+                        <th class="px-6 py-4">Program</th>
+                        <th class="px-6 py-4">Score</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-700">
+                    <tr class="hover:bg-[#0ea5e9]/10 transition duration-300">
+                        <td class="px-6 py-4 font-bold text-yellow-400">4</td>
+                        <td class="px-6 py-4">Sneha Roy</td>
+                        <td class="px-6 py-4">Cyber Security</td>
+                        <td class="px-6 py-4">870</td>
+                    </tr>
+                    <tr class="hover:bg-[#8b5cf6]/10 transition duration-300">
+                        <td class="px-6 py-4 font-bold text-yellow-400">5</td>
+                        <td class="px-6 py-4">Aditya Verma</td>
+                        <td class="px-6 py-4">Cloud Computing</td>
+                        <td class="px-6 py-4">860</td>
+                    </tr>
+                    <tr class="hover:bg-[#14b8a6]/10 transition duration-300">
+                        <td class="px-6 py-4 font-bold text-yellow-400">6</td>
+                        <td class="px-6 py-4">Megha Sharma</td>
+                        <td class="px-6 py-4">Web Development</td>
+                        <td class="px-6 py-4">855</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Weekly Highlights Section -->
+    <section class="mt-20 w-full max-w-7xl mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-10 animate-fade-in-up">Weekly Highlights ✨</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+                class="bg-gradient-to-r from-green-500 to-emerald-400 text-white p-6 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 hover:shadow-[0_0_25px_rgba(52,211,153,0.6)]">
+                <h3 class="text-xl font-bold mb-2">📈 Most Improved</h3>
+                <p class="text-sm text-white/90"><span class="font-semibold">Megha Sharma</span> gained <span
+                        class="font-bold">+250 points</span> this week in the Web Development program!</p>
+            </div>
+
+            <div
+                class="bg-gradient-to-r from-pink-500 to-fuchsia-500 text-white p-6 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 hover:shadow-[0_0_25px_rgba(236,72,153,0.6)]">
+                <h3 class="text-xl font-bold mb-2">🎉 New Entry</h3>
+                <p class="text-sm text-white/90"><span class="font-semibold">Rahul Sen</span> entered the leaderboard
+                    for the first time in Cyber Security!</p>
+            </div>
+
+            <div
+                class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-6 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 hover:shadow-[0_0_25px_rgba(59,130,246,0.6)]">
+                <h3 class="text-xl font-bold mb-2">🏅 Top Performer</h3>
+                <p class="text-sm text-white/90"><span class="font-semibold">Aryan Patel</span> remains in the top 3 for
+                    4 consecutive weeks in Machine Learning!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-[#0f172a] overflow-hidden text-white py-14 px-6 mt-24">
+        <div
+            class="absolute top-0 left-0 w-80 h-80 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full opacity-30 blur-3xl animate-floating -z-10">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-72 h-72 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full opacity-30 blur-2xl animate-floating delay-1000 -z-10">
+        </div>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-start z-10">
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold text-white animate-fade-in-up">Inlighn<span
+                        class="text-blue-400">Tech</span></h2>
+                <p class="text-sm text-gray-400 leading-relaxed max-w-sm">
+                    Real skills. Real mentors. Real internships. Level up your career with Inlighn Tech's immersive
+                    training experience.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-blue-400 transition">🏠 Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-400 transition">📖 About</a></li>
+                    <li><a href="programs.html" class="hover:text-blue-400 transition">🎓 Programs</a></li>
+                    <li><a href="verify.html" class="hover:text-blue-400 transition">✅ Verify</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-400 transition">📞 Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Stay Connected</h3>
+                <div class="flex gap-5 text-xl">
+                    <a href="#"
+                        class="text-blue-400 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_#60a5fa]"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="text-pink-400 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_#ec4899]"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#"
+                        class="text-cyan-400 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_#22d3ee]"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#"
+                        class="text-red-500 hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_10px_#f87171]"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 via-blue-500 to-cyan-400 animate-pulse-slow">
+        </div>
+        <!-- Bottom Line -->
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
+            <p>&copy; <span id="year"></span> Inlighn Tech. All rights reserved. | Made with ❤️ by
+                <a href="https://github.com/LEYTHAN-X" target="_blank"
+                    class="text-blue-400 hover:underline">Leythan-X</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
