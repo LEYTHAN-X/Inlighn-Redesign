@@ -70,11 +70,11 @@ Welcome to the complete frontend redesign of **Inlighn Tech**, a sleek, futurist
 
 ## 💡 Ideas for Future Enhancements
 
-- Authentication & session-based login (backend)
-- Dynamic leaderboard using API
-- Certificate generator integration
-- Live chatbot using OpenAI/ChatGPT API
-- Admin dashboard for analytics
+- Authentication & session-based login (backend).
+- Dynamic leaderboard using API.
+- Certificate generator integration.
+- Live chatbot using OpenAI/ChatGPT API.
+- Admin dashboard for analytics.
 
 ---
 
