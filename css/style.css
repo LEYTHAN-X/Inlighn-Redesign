@@ -25,6 +25,7 @@
     mix-blend-mode: lighten;
 }
 
+/* === Nav Link Underline Hover === */
 .nav-link {
     @apply text-white hover:text-blue-400 transition duration-300 relative;
 }
@@ -44,11 +45,12 @@
     width: 100%;
 }
 
+/* === Mobile Nav Link === */
 .mobile-link {
     @apply block py-2 text-white hover:text-blue-400 transition duration-300;
 }
 
-/* === Rainbow Gradient Animation === */
+/* === Rainbow Background Animation === */
 @keyframes rainbow {
     0% {
         background-position: 0% 50%;
@@ -92,19 +94,19 @@
     animation: fade-in-up 1s ease-out forwards;
 }
 
-/* === Animation Delay Utilities === */
+/* === Delay Utility === */
 .delay-100 {
     animation-delay: 0.2s;
 }
 
-/* === Optional: Reduce Motion for Accessibility === */
+/* === Reduce Motion for Accessibility === */
 @media (prefers-reduced-motion: reduce) {
     .trail-dot {
         display: none;
     }
 }
 
-/* Glowing Shadow Animation */
+/* === Glowing Card Shadow Animation === */
 @keyframes glowPulse {
     0% {
         box-shadow: 0 0 8px rgba(59, 130, 246, 0.3),
@@ -130,6 +132,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* === Floating Up & Down Animation === */
 @keyframes float {
 
     0%,
@@ -146,6 +149,7 @@
     animation: float 4s ease-in-out infinite;
 }
 
+/* === Slow Pulse Animation === */
 @keyframes pulseSlow {
 
     0%,
@@ -164,18 +168,7 @@
     animation: pulseSlow 5s ease-in-out infinite;
 }
 
-@keyframes ripple {
-    0% {
-        transform: scale(0.8);
-        opacity: 0.4;
-    }
-
-    100% {
-        transform: scale(1.2);
-        opacity: 0;
-    }
-}
-
+/* === Liquid Wave Animation === */
 @keyframes liquidWave {
     0% {
         transform: translateY(0) rotate(0deg);
@@ -194,6 +187,7 @@
     animation: liquidWave 6s ease-in-out infinite;
 }
 
+/* === Ripple Circle Effect === */
 @keyframes ripple {
     0% {
         transform: scale(0.8);
@@ -209,3 +203,4 @@
 .animate-ripple {
     animation: ripple 2.5s ease-in-out infinite;
 }
+
